@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bannerBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1F1410"/>
+      <stop offset="50%" style="stop-color:#2A1A12"/>
+      <stop offset="100%" style="stop-color:#352218"/>
+    </linearGradient>
+    <linearGradient id="amberGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#D4915C;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#D4915C;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#D4915C;stop-opacity:0"/>
+    </linearGradient>
+    <pattern id="woodGrain" patternUnits="userSpaceOnUse" width="100" height="100">
+      <rect width="100" height="100" fill="transparent"/>
+      <path d="M0 20 Q25 15 50 20 T100 20" fill="none" stroke="#D4915C" stroke-width="0.5" opacity="0.08"/>
+      <path d="M0 40 Q25 35 50 40 T100 40" fill="none" stroke="#D4915C" stroke-width="0.5" opacity="0.08"/>
+      <path d="M0 60 Q25 55 50 60 T100 60" fill="none" stroke="#D4915C" stroke-width="0.5" opacity="0.08"/>
+      <path d="M0 80 Q25 75 50 80 T100 80" fill="none" stroke="#D4915C" stroke-width="0.5" opacity="0.08"/>
+    </pattern>
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#D4915C;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#D4915C;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#bannerBg)"/>
+
+  <!-- Wood grain pattern -->
+  <rect width="1200" height="400" fill="url(#woodGrain)"/>
+
+  <!-- Center glow -->
+  <rect width="1200" height="400" fill="url(#centerGlow)"/>
+
+  <!-- Decorative horizontal lines -->
+  <line x1="0" y1="100" x2="1200" y2="100" stroke="url(#amberGlow)" stroke-width="1"/>
+  <line x1="0" y1="300" x2="1200" y2="300" stroke="url(#amberGlow)" stroke-width="1"/>
+
+  <!-- Corner decorations -->
+  <g opacity="0.3">
+    <path d="M0 0 L80 0 L0 80 Z" fill="#D4915C" opacity="0.1"/>
+    <path d="M1200 0 L1120 0 L1200 80 Z" fill="#D4915C" opacity="0.1"/>
+    <path d="M0 400 L80 400 L0 320 Z" fill="#D4915C" opacity="0.1"/>
+    <path d="M1200 400 L1120 400 L1200 320 Z" fill="#D4915C" opacity="0.1"/>
+  </g>
+
+  <!-- Tool silhouettes -->
+  <g fill="#D4915C" opacity="0.08">
+    <!-- Hammer -->
+    <path d="M150 180 L170 160 L180 170 L160 190 L150 180 M170 160 L200 130 L210 140 L180 170" transform="rotate(-15 175 165)"/>
+    <!-- Saw -->
+    <path d="M1000 150 L1050 150 L1050 145 L1060 150 L1050 155 L1050 150 M1000 150 L1000 200 L1050 200 L1050 150" transform="rotate(10 1025 175)"/>
+    <!-- Chisel -->
+    <path d="M200 280 L220 260 L230 270 L210 290 Z" transform="rotate(25 215 275)"/>
+  </g>
+</svg>
