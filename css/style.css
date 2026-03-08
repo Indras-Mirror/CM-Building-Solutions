@@ -446,7 +446,7 @@ img {
     border-radius: 12px;
     margin: 10px auto 0;
     position: relative;
-    opacity: 0.6;
+    opacity: 0.9;
 }
 
 .scroll-indicator::before {
@@ -1321,7 +1321,7 @@ section {
     height: auto;
     display: block;
     margin: 0 auto;
-    opacity: 0.6;
+    opacity: 0.9;
 }
 
 /* Corner Flourishes */
