@@ -1493,30 +1493,34 @@ section {
 
 /* Logo Image Styling */
 .logo-image {
-    height: 50px;
+    height: 70px;
     width: auto;
     transition: transform var(--transition-fast);
 }
 
 .logo:hover .logo-image {
-    transform: scale(1.02);
+    transform: scale(1.05);
 }
 
 .navbar .logo-image {
-    height: 55px;
+    height: 80px;
 }
 
 .footer .logo-image {
-    height: 60px;
-    margin-bottom: 12px;
+    height: 100px;
+    margin-bottom: 16px;
 }
 
 @media (max-width: 768px) {
     .logo-image {
-        height: 45px;
+        height: 55px;
     }
-    
+
     .navbar .logo-image {
-        height: 48px;
+        height: 60px;
+    }
+
+    .footer .logo-image {
+        height: 70px;
     }
 }
