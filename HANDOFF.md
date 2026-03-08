@@ -176,12 +176,12 @@ This is a static site - no npm, webpack, or build step. Just open `index.html` i
 - [ ] **Form backend** - Connect form to actually send emails (Formspree, EmailJS, or custom)
 
 ### SEO Improvements
-- [ ] **Schema markup** - LocalBusiness structured data
-- [ ] **sitemap.xml** - For search engine crawling
-- [ ] **robots.txt** - Crawl instructions
+- [x] **Schema markup** - LocalBusiness structured data
+- [x] **sitemap.xml** - For search engine crawling
+- [x] **robots.txt** - Crawl instructions
 - [ ] **Google Business Profile** - Create/claim listing
-- [ ] **Meta tags refinement** - Open Graph, Twitter cards
-- [ ] **Image alt text** - Add to all images
+- [x] **Meta tags refinement** - Open Graph, Twitter cards
+- [x] **Image alt text** - Add to all images
 
 ### Content Additions
 - [ ] **Testimonials section** - Customer reviews
