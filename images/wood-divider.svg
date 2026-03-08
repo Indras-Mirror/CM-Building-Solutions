@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="toolGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4915C"/>
+      <stop offset="100%" style="stop-color:#B87333"/>
+    </linearGradient>
+  </defs>
+  <!-- Hammer -->
+  <g transform="translate(40, 30)">
+    <!-- Handle -->
+    <rect x="45" y="60" width="12" height="80" rx="3" fill="#8B5A2B"/>
+    <rect x="47" y="60" width="3" height="80" fill="#6B4423" opacity="0.3"/>
+    <!-- Head -->
+    <rect x="20" y="40" width="60" height="25" rx="4" fill="url(#toolGrad)"/>
+    <rect x="20" y="40" width="60" height="8" rx="4" fill="#E8B882" opacity="0.3"/>
+    <!-- Claw -->
+    <path d="M20 52 L5 45 L5 50 L20 55" fill="url(#toolGrad)"/>
+    <path d="M80 52 L95 45 L95 50 L80 55" fill="url(#toolGrad)"/>
+  </g>
+</svg>

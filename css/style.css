@@ -1290,3 +1290,238 @@ section {
 .btn-primary {
     animation: glowPulse 3s ease-in-out infinite;
 }
+
+/* =====================================================
+   Decorative Elements
+   ===================================================== */
+
+/* Section Dividers */
+.section-divider {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background: var(--bg-dark);
+}
+
+.section-divider img {
+    width: 300px;
+    height: auto;
+    opacity: 0.7;
+}
+
+/* Plank Divider */
+.plank-divider {
+    padding: 10px 20px;
+    background: var(--bg-warm);
+}
+
+.plank-divider img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    opacity: 0.6;
+}
+
+/* Corner Flourishes */
+.corner-flourish {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.corner-flourish.top-left {
+    top: 80px;
+    left: 20px;
+    background: radial-gradient(ellipse at top left, rgba(212, 145, 92, 0.1) 0%, transparent 70%);
+}
+
+.corner-flourish.top-right {
+    top: 80px;
+    right: 20px;
+    background: radial-gradient(ellipse at top right, rgba(212, 145, 92, 0.08) 0%, transparent 70%);
+}
+
+/* Hero Tools Decoration */
+.hero-tools {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.hero-tools .tool {
+    position: absolute;
+    opacity: 0.06;
+    filter: drop-shadow(0 0 20px rgba(212, 145, 92, 0.2));
+}
+
+.tool-hammer {
+    width: 120px;
+    top: 15%;
+    left: 8%;
+    transform: rotate(-20deg);
+}
+
+.tool-saw {
+    width: 100px;
+    top: 20%;
+    right: 10%;
+    transform: rotate(15deg);
+}
+
+.tool-chisel {
+    width: 80px;
+    bottom: 25%;
+    left: 12%;
+    transform: rotate(-45deg);
+}
+
+/* About Section Decorations */
+.about-decor {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.decor-tool {
+    position: absolute;
+    opacity: 0.08;
+}
+
+.decor-1 {
+    width: 80px;
+    top: 20px;
+    right: 20px;
+    transform: rotate(10deg);
+}
+
+.decor-2 {
+    width: 60px;
+    bottom: 80px;
+    left: 20px;
+    transform: rotate(-15deg);
+}
+
+/* Floating Animation */
+@keyframes float {
+    0%, 100% { transform: translateY(0) rotate(var(--rotation, 0deg)); }
+    50% { transform: translateY(-10px) rotate(var(--rotation, 0deg)); }
+}
+
+.tool-hammer {
+    --rotation: -20deg;
+    animation: float 6s ease-in-out infinite;
+}
+
+.tool-saw {
+    --rotation: 15deg;
+    animation: float 7s ease-in-out infinite;
+    animation-delay: -2s;
+}
+
+.tool-chisel {
+    --rotation: -45deg;
+    animation: float 8s ease-in-out infinite;
+    animation-delay: -4s;
+}
+
+/* Decorative Border Pattern */
+.decorative-border {
+    position: relative;
+}
+
+.decorative-border::before,
+.decorative-border::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(212, 145, 92, 0.3), transparent);
+}
+
+.decorative-border::before {
+    top: 0;
+}
+
+.decorative-border::after {
+    bottom: 0;
+}
+
+/* Wood Knot Decoration */
+.wood-knot {
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    background: radial-gradient(ellipse, rgba(92, 61, 46, 0.4), transparent);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+/* Responsive adjustments for decorations */
+@media (max-width: 768px) {
+    .hero-tools .tool {
+        opacity: 0.03;
+    }
+    
+    .tool-hammer {
+        width: 80px;
+        left: 5%;
+    }
+    
+    .tool-saw {
+        width: 70px;
+        right: 5%;
+    }
+    
+    .tool-chisel {
+        display: none;
+    }
+    
+    .section-divider img {
+        width: 200px;
+    }
+    
+    .corner-flourish {
+        display: none;
+    }
+}
+
+/* Logo Image Styling */
+.logo-image {
+    height: 50px;
+    width: auto;
+    transition: transform var(--transition-fast);
+}
+
+.logo:hover .logo-image {
+    transform: scale(1.02);
+}
+
+.navbar .logo-image {
+    height: 55px;
+}
+
+.footer .logo-image {
+    height: 60px;
+    margin-bottom: 12px;
+}
+
+@media (max-width: 768px) {
+    .logo-image {
+        height: 45px;
+    }
+    
+    .navbar .logo-image {
+        height: 48px;
+    }
+}

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="chiselMetal" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#A0A0A0"/>
+      <stop offset="50%" style="stop-color:#D0D0D0"/>
+      <stop offset="100%" style="stop-color:#909090"/>
+    </linearGradient>
+    <linearGradient id="woodHandle" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4915C"/>
+      <stop offset="50%" style="stop-color:#8B5A2B"/>
+      <stop offset="100%" style="stop-color:#6B4423"/>
+    </linearGradient>
+  </defs>
+  <!-- Handle -->
+  <ellipse cx="60" cy="100" rx="35" ry="25" fill="url(#woodHandle)"/>
+  <ellipse cx="55" cy="95" rx="15" ry="10" fill="#E8B882" opacity="0.3"/>
+  <!-- Metal collar -->
+  <rect x="90" y="88" width="20" height="24" rx="2" fill="#B87333"/>
+  <!-- Blade -->
+  <path d="M110 92 L180 85 L185 100 L180 115 L110 108 Z" fill="url(#chiselMetal)"/>
+  <!-- Blade edge -->
+  <path d="M175 90 L185 100 L175 110" fill="#E0E0E0"/>
+  <!-- Blade shine -->
+  <rect x="115" y="95" width="55" height="6" fill="white" opacity="0.2" rx="1"/>
+</svg>

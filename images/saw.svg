@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="sawGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#C0C0C0"/>
+      <stop offset="50%" style="stop-color:#E8E8E8"/>
+      <stop offset="100%" style="stop-color:#A0A0A0"/>
+    </linearGradient>
+    <linearGradient id="handleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4915C"/>
+      <stop offset="100%" style="stop-color:#8B5A2B"/>
+    </linearGradient>
+  </defs>
+  <!-- Handle -->
+  <rect x="140" y="70" width="45" height="60" rx="8" fill="url(#handleGrad)"/>
+  <rect x="145" y="75" width="10" height="50" rx="3" fill="#E8B882" opacity="0.3"/>
+  <!-- Blade -->
+  <path d="M20 90 L140 80 L140 120 L20 110 Z" fill="url(#sawGrad)"/>
+  <!-- Teeth -->
+  <g fill="none" stroke="#808080" stroke-width="1">
+    <path d="M30 110 L35 105 L40 110"/>
+    <path d="M50 109 L55 104 L60 109"/>
+    <path d="M70 108 L75 103 L80 108"/>
+    <path d="M90 107 L95 102 L100 107"/>
+    <path d="M110 106 L115 101 L120 106"/>
+    <path d="M130 105 L135 100 L140 105"/>
+  </g>
+  <!-- Blade shine -->
+  <rect x="25" y="92" width="110" height="8" fill="white" opacity="0.2" rx="2"/>
+</svg>
