@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 40" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="plankShade" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#5C3D2E"/>
+      <stop offset="15%" style="stop-color:#4A2C1A"/>
+      <stop offset="85%" style="stop-color:#3D2415"/>
+      <stop offset="100%" style="stop-color:#2D1810"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Main plank body -->
+  <rect width="200" height="40" fill="url(#plankShade)"/>
+
+  <!-- Top highlight edge -->
+  <rect y="0" width="200" height="3" fill="#8B5A2B" opacity="0.4"/>
+
+  <!-- Subtle wood grain lines -->
+  <g opacity="0.08" stroke="#D4915C" stroke-width="0.5">
+    <path d="M0 12 Q50 10 100 12 T200 12" fill="none"/>
+    <path d="M0 24 Q50 22 100 24 T200 24" fill="none"/>
+    <path d="M0 32 Q50 30 100 32 T200 32" fill="none"/>
+  </g>
+
+  <!-- Bottom shadow edge -->
+  <rect y="38" width="200" height="2" fill="#1A0F0A"/>
+</svg>

@@ -1311,12 +1311,12 @@ section {
 
 /* Plank Divider */
 .plank-divider {
-    height: 160px;
+    height: 40px;
     background: var(--bg-dark);
-    background-image: url('../images/wood-plank-final.png');
+    background-image: url('../images/skirting-plank.svg');
     background-repeat: repeat-x;
     background-position: center;
-    background-size: auto 160px;
+    background-size: 200px 40px;
 }
 
 /* Corner Flourishes */
